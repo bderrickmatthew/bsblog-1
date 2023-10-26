@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport"
+        content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <meta name="description" content="">
+        <meta name="author" content="badkmw">
+        <title>Blog-BSP5</title>
+        <!---Bootstrap CSS--->
+        <link rel = "stylesheet" href = "css/bootstrap.css">
+        <!---Fontawesome CSS--->
+        <link rel = "stylesheet" href = "fontawesome/all.css">
+        <!---Custom CSS--->
+        <link rel = "stylesheet" href = "mystyle.css">
+    </head>
+    <body>
+        <header>
+            <nav class = "navbar navbar-dark navbar-expand-lg m-0 p-0 border-bottom bdclr" aria-label = "Fifth navbar example">
+                <div class = "container-fluid">
+                    <a class = "navbar-brand h1 fw-bold" href = "#">
+                        PhosHouse<span class = "logo-color">Tech</span>
+                    </a>
+                    <button class = "navbar-toggler"
+                    type = "button"
+                    data-bs-toggle = "collapse"
+                    data-bs-target = "#mynavbar01"
+                    aria-controls = "mynavbar01"
+                    aria-expanded = "false"
+                    aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <div class = "collapse navbar-collapse" id = "mynavbar01">
+                        <ul class = "navbar-nav ms-auto justify-content-center">
+                            <li class = "nav-item ">
+                                <a class = "nav-link active m-1 link-info" href = "#">Home</a>
+                            </li>
+                            <li class = "nav-item ">
+                                <a class = "nav-link m-1" href = "#">About</a>
+                            </li>
+                            <li class = "nav-item ">
+                                <a class = "nav-link m-1 my-color" href = "#">Services</a>
+                            </li>
+                            <li class = "nav-item dropdown ">
+                                <a class = "nav-link dropdown-toggle m-1"
+                                    href = "#"
+                                    id = "dropdown01"
+                                    data-bs-toggle = "dropdown"
+                                    aria-expanded = "false"
+                                    data-bs-display = "static">
+                                    <i class = "fa-solid fa-user"></i>
+                                    PhosHouseTech
+                                </a>
+                                <ul class = "dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby = "dropdown01">
+                                    <li><a class = "dropdown-item text-light" href = "admin/admin.html">DashBoard</a></li>
+                                    <li><a class = "dropdown-item text-light" href = "#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class = "container-md text-light mt-3 mb-5">
+            <!---Carousel---->
+            <div id="carouselExampleControls" class="carousel slide mycrsl" data-bs-ride="carousel">
+                <!--<div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-1.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-1.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-1.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-2.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-2.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-2.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-3.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-3.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="images/cl-img-3.jpg"  alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!---end of carousel--->
+            <!----Content------>
+            <div class = "row g-5">
+                <!---main content--->
+                <div class = "col-md-8">
+                    <h3 class = "pb-4 mb-4 fst-italic border-bottom ">Recent Posts</h3>
+                    <div class = "row row-cols-1">
+                        <div class = "col">
+                            <div class = "row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class = "col p-4 d-flex flex-column position-static">
+                                    <strong class = "d-inline-block mb-2 text-primary">Technology</strong>
+                                    <h3 class = "mb-0">Featured Post</h3>
+                                    <div class = "mb-1 text-muted">June 4</div>
+                                    <p class = "card-text mb-auto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, laudantium vero.
+                                        Accusamus consequuntur nostrum possimus.
+                                    </p>
+                                    <a href = "post.html" class = "stretched-link">Read More...</a>
+                                </div>
+                                <div class = "col-auto d-none d-lg-block">
+                                    <img src = "images/thumbnail2.jpg" class = "" width = "350" height = "250">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col">
+                            <div class = "row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class = "col p-4 d-flex flex-column position-static">
+                                    <strong class = "d-inline-block mb-2 text-primary">Technology</strong>
+                                    <h3 class = "mb-0">Featured Post</h3>
+                                    <div class = "mb-1 text-muted">June 4</div>
+                                    <p class = "card-text mb-auto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, laudantium vero.
+                                        Accusamus consequuntur nostrum possimus.
+                                    </p>
+                                    <a href = "post.html" class = "stretched-link">Read More...</a>
+                                </div>
+                                <div class = "col-auto d-none d-lg-block">
+                                    <img src = "images/thumbnail2.jpg" class = "img-fluid" width = "350" height = "250">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col">
+                            <div class = "row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class = "col p-4 d-flex flex-column position-static">
+                                    <strong class = "d-inline-block mb-2 text-primary">Technology</strong>
+                                    <h3 class = "mb-0">Featured Post</h3>
+                                    <div class = "mb-1 text-muted">June 4</div>
+                                    <p class = "card-text mb-auto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, laudantium vero.
+                                        Accusamus consequuntur nostrum possimus.
+                                    </p>
+                                    <a href = "post.html" class = "stretched-link">Read More...</a>
+                                </div>
+                                <div class = "col-auto d-none d-lg-block">
+                                    <img src = "images/thumbnail2.jpg" class = "img-fluid" width = "350" height = "250">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col">
+                            <div class = "row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class = "col p-4 d-flex flex-column position-static">
+                                    <strong class = "d-inline-block mb-2 text-primary">Technology</strong>
+                                    <h3 class = "mb-0">Featured Post</h3>
+                                    <div class = "mb-1 text-muted">June 4</div>
+                                    <p class = "card-text mb-auto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, laudantium vero.
+                                        Accusamus consequuntur nostrum possimus.
+                                    </p>
+                                    <a href = "post.html" class = "stretched-link">Read More...</a>
+                                </div>
+                                <div class = "col-auto d-none d-lg-block">
+                                    <img src = "images/thumbnail2.jpg" class = "img-fluid" width = "350" height = "250">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--blog-pagination-->
+                    <nav class = "blog-pagination" aria-label = "Pagination">
+                        <a href = "#" class = "btn btn-outline-primary">Older</a>
+                        <a href = "#" class = "btn btn-outline-secondary">Newer</a>
+                    </nav>
+                    <!--end--->
+                </div>
+                <!---end of main content--->
+                <!---sidebar--->
+                <div class = "col-lg-4" id="sidebar01">
+                    <div class = "position-sticky mt-xl-5" style = "top:2rem;">
+                        <!---Search widget--->
+                        <div class="card mb-4 ftr-bg">
+                            <div class="card-header mychr">Search</div>
+                            <div class="card-body bg-light">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search">
+                                    <button class="btn ftr-bg text-light" id="button-search" type="button">Go!</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!---Topics widget--->
+                        <div class="card mb-md-4 ftr-bg" id="topics">
+                            <div class="card-header">
+                                Topics
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">Web Design</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">HTML</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Freebies</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Javascript</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">CSS</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Tutorials</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#">Hacking</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!---end of sidebar-->
+            </div>
+            <!---end of content--->
+        </main>
+        <footer class="ftr-bg">
+            <div class = "py-5 container-fluid text-light" >
+                <div class="container-md">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <a class = "navbar-brand h1 fw-bold text-light" href = "#">
+                                PhosHouse<span class = "logo-color">Tech</span>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi cum eaque est excepturi facere
+                            iste laborum, perferendis quis voluptatem.</p>
+                            <div class = "row-cols-1 mb-2">
+                                <div class = "col">
+                                    <i class = "fa fa-phone"></i>
+                                    +256705029773
+                                </div>
+                                <div class = "col">
+                                    <i class = "fa fa-envelope"></i>
+                                    badkmw@yandex.com
+                                </div>
+                            </div>
+                            <ul class = "nav pb-3 mb-3" id = "socials">
+                                <li class = "border p-1 rounded">
+                                    <a href = "#" class = "text-light">
+                                        <i class = "fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class = "ms-2 border p-1 rounded">
+                                    <a href = "#" class = "text-light">
+                                        <i class = "fab fa-instagram fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class = "ms-2 border p-1 rounded">
+                                    <a href = "#" class = "text-light">
+                                        <i class = "fab fa-twitter fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class = "ms-2 border p-1 rounded">
+                                    <a href = "#" class = "text-light">
+                                        <i class = "fab fa-youtube fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class = "ms-2 border p-1 rounded">
+                                    <a href = "#" class = "text-light">
+                                        <i class = "fab fa-github fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "col-md-3 ms-auto" id = "ftr-links">
+                            <h3 class="fw-bold">Quick Links</h3>
+                            <ul class = "nav flex-column ms-2">
+                                <li class = "mb-2 text-uppercase"><a href = "#" class = "nav-link p-0 text-light ">Home</a></li>
+                                <li class = "mb-2 text-uppercase"><a href = "#" class = "nav-link p-0 text-light">Features</a></li>
+                                <li class = "mb-2 text-uppercase"><a href = "#" class = "nav-link p-0 text-light">Pricing</a></li>
+                                <li class = "mb-2 text-uppercase"><a href = "#" class = "nav-link p-0 text-light">FAQs</a></li>
+                                <li class = "mb-2 text-uppercase"><a href = "#" class = "nav-link p-0 text-light">About</a></li>
+                            </ul>
+                        </div>
+                        <div class = "col-md-4 ms-auto">
+                            <h3 class="fw-bold">Contact Us</h3>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Your Message..."></textarea>
+                            </div>
+                            <div class="mb-2 d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-envelope"></i> Submit</button>
+                            </div>
+                            <div class="mb-3">
+                                <h4 class="text-center">-OR-</h4>
+                                <form>
+                                    <h5>Subscribe to our newsletter</h5>
+                                    <p>Monthly digest of whats new and exciting from us.</p>
+                                    <div class="d-flex w-100 gap-2">
+                                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                        <button class="btn btn-primary" type="button">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-md pb-md-2 mb-md-2 border-top ">
+                    <p class="text-light pt-md-3 text-center">
+                        &copy; 2022 phoshousetech | Designed by badkmw. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!---Bootstrap js bundle--->
+        <script src = "js/bootstrap.bundle.js"></script>
+        <!---Fontawesome js--->
+        <script src = "fontawesome/all.js"></script>
+    </body>
+</html>

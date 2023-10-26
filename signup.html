@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport"
+        content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <meta name="description" content="">
+        <meta name="author" content="badkmw">
+        <title>Sign Up</title>
+        <!---Bootstrap CSS--->
+        <link rel = "stylesheet" href = "css/bootstrap.css">
+        <!---Fontawesome CSS--->
+        <link rel = "stylesheet" href = "fontawesome/all.css">
+        <!---Custom CSS--->
+        <link rel = "stylesheet" href = "mystyle.css">
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+    <body>
+        <header>
+            <nav class = "navbar navbar-dark navbar-expand-lg m-0 p-0 border-bottom bdclr" aria-label = "Fifth navbar example">
+                <div class = "container-fluid">
+                    <a class = "navbar-brand h1 fw-bold" href = "#">
+                        PhosHouse<span class = "logo-color">Tech</span>
+                    </a>
+                    <button class = "navbar-toggler"
+                    type = "button"
+                    data-bs-toggle = "collapse"
+                    data-bs-target = "#mynavbar01"
+                    aria-controls = "mynavbar01"
+                    aria-expanded = "false"
+                    aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <div class = "collapse navbar-collapse" id = "mynavbar01">
+                        <ul class = "navbar-nav ms-auto justify-content-center">
+                            <li class = "nav-item ">
+                                <a class = "nav-link active m-1 link-info" href = "#">Home</a>
+                            </li>
+                            <li class = "nav-item ">
+                                <a class = "nav-link m-1" href = "#">About</a>
+                            </li>
+                            <li class = "nav-item ">
+                                <a class = "nav-link m-1 my-color" href = "#">Services</a>
+                            </li>
+                            <li class = "nav-item dropdown ">
+                                <a class = "nav-link dropdown-toggle m-1"
+                                    href = "#"
+                                    id = "dropdown01"
+                                    data-bs-toggle = "dropdown"
+                                    aria-expanded = "false"
+                                    data-bs-display = "static">
+                                    <i class = "fa-solid fa-user"></i>
+                                    PhosHouseTech
+                                </a>
+                                <ul class = "dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby = "dropdown01">
+                                    <li><a class = "dropdown-item text-light" href = "admin/admin.html">DashBoard</a></li>
+                                    <li><a class = "dropdown-item text-light" href = "#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container col-xl-10 col-xxl-8 px-4 py-5 ">
+                <div class="row align-items-center g-lg-5 py-5 ">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <h1 class="display-4 fw-bold lh-1 mb-3">Sign Up</h1>
+                        <p class="col-lg-10 fs-4">
+                            Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Ratione, cum earum maiores quasi totam esse explicabo! Ducimus debitis quo officiis!
+                        </p>
+                    </div>
+                    <div class="col-md-10 mx-auto col-lg-5">
+                        <form class="p-4 p-md-5 rounded-3 ftr-bg">
+                            <div class="form-floating mb-3 text-dark">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                <label for="floatingInput">Email Address</label>
+                            </div>
+                            <div class="form-floating mb-3 text-dark">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating mb-3 text-dark">
+                                <input type="password" class="form-control" id="floatingCPassword" placeholder="Confirm Password" required>
+                                <label for="floatingCPassword">Confirm Password</label>
+                            </div>
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox"value="remember-me"> Remember Me
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+                            <hr class="my-4">
+                            <small class="text-muted">By clicking Sign Up, you agree to the terms of use.</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!---Bootstrap js bundle--->
+        <script src = "js/bootstrap.bundle.js"></script>
+        <!---Fontawesome js--->
+        <script src = "fontawesome/all.js"></script>
+    </body>
+</html>

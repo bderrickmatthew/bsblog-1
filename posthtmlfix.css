@@ -1,0 +1,17 @@
+
+.note {
+	padding: 10px;
+	border-left: 6px solid #2e9cca;
+	border-radius: 5px;
+}
+
+.socialbtn01 {
+	border: 0;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+	padding: 0.625rem 1.5rem 0.5rem;  
+	font-size: .75rem; 
+}
+
+#author a, #featured a {
+	text-decoration: none;
+}

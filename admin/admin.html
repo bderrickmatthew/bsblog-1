@@ -1,0 +1,182 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="badkmw">
+    
+    <title>Admin Dashboard</title>
+    <!---Bootstrap CSS--->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!---Fontawesome CSS--->
+    <link rel="stylesheet" type="text/css" href="../fontawesome/all.css">
+    <!---Custom CSS--->
+    <link rel="stylesheet" type="text/css" href="admin.css">
+  </head>
+  <body>
+    <header>
+      <nav class = "navbar navbar-dark navbar-expand-lg m-0 p-0 sticky-top flex-md-row flex-md-nowrap shadow align-items-stretch" aria-label = "navbarAdmin">
+        
+        <a class = "navbar-brand h1 fw-bold col-md-3 col-lg-2 me-0 px-3 mb-0 myff" href = "../index.html" target="_blank">
+          PhosHouse<span class = "logo-color">Tech</span>
+        </a>
+        <button class = "navbar-toggler"
+        type = "button"
+        data-bs-toggle = "collapse"
+        data-bs-target = "#sidebarMenu"
+        aria-controls = "sidebarMenu"
+        aria-expanded = "false"
+        aria-label = "Toggle navigation">
+        <span class = "navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 search-input" type="text" placeholder="Search" aria-label="Search">
+        
+        <ul class = "navbar-nav ms-auto justify-content-center mydd">
+          <li class = "nav-item dropdown ">
+            <a class = "nav-link dropdown-toggle m-1"
+              href = "#"
+              id = "dropdown01"
+              data-bs-toggle = "dropdown"
+              aria-expanded = "false"
+              data-bs-display = "static">
+              <i class = "fa-solid fa-user"></i>
+              Admin
+            </a>
+            <ul class = "dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby = "dropdown01">
+              <li><a class = "dropdown-item text-light" href = "../index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar-sticky collapse mybg">
+          <div class="position-sticky pt-3">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item mb-2">
+                <a href="admin.html" class="nav-link active text-light" aria-current="page">
+                  <span data-feather="home"></span>
+                  <i class="fa fa-home fa-fw me-2 bi"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="manageposts.html" class="nav-link text-light " aria-current="page">
+                  <span data-feather="file"></span>
+                  <i class="fa fa-file-alt fa-fw me-2 bi"></i>
+                  Manage Posts
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="managetopics.html" class="nav-link text-light" aria-current="page">
+                  <span data-feather="file"></span>
+                  <i class="fa fa-list-alt fa-fw me-2 bi"></i>
+                  Manage Topics
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="manageusers.html" class="nav-link text-light" aria-current="page">
+                  <span data-feather="users"></span>
+                  <i class="fa fa-users fa-fw me-2 bi"></i>
+                  Manage Users
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!---Content--->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h2>Dashboard</h2>
+            <div class="btn-toolbar bg-dark mb-2 mb-md-0 ">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary text-light mybtn01">Share</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary text-light mybtn01">Export</button>
+                
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle text-light mybtn01" id="dropdownMenuBtn01" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-calendar"></i>
+                This Week
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuBtn01">
+                  <li>
+                    <a href="" class="dropdown-item">This Month</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">This Year</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap flex-md-nowrap align-items-center pt-0 pb-2 mb-3">
+            
+            <div class="row w-100 ">
+              <div class="col-md p-2">
+                <div class="card card-common mybg">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between">
+                      <i class="fa fa-file-alt fa-3x text-primary"></i>
+                      <div class="text-right text-light">
+                        <h5>Posts</h5>
+                        <h3>2</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-secondary">
+                    <i class="fa fa-sync me-3"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md p-2">
+                <div class="card card-common mybg">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fa fa-list-alt fa-3x text-primary"></i>
+                      <div class="text-right text-light">
+                        <h5>Topics</h5>
+                        <h3>3</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-secondary">
+                    <i class="fa fa-sync me-3"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md p-2">
+                <div class="card card-common mybg">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fa fa-users fa-3x text-primary"></i>
+                      <div class="text-right text-light">
+                        <h5>Users</h5>
+                        <h3>3</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-secondary">
+                    <i class="fa fa-sync me-3"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </main>
+      </div>
+    </div>
+    
+    <!---end of content--->
+    <!---Bootstrap js bundle--->
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+    <!---Fontawesome js--->
+    <script type="text/javascript" src="../fontawesome/all.js"></script>
+  </body>
+</html>

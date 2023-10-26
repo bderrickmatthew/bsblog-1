@@ -1,0 +1,172 @@
+/*-------body-------*/
+body{
+    /* margin: 0;
+    padding: 0; */
+    font-family: Montserrat, "Open Sans", sans-serif;
+    background-color: #25274d;
+    color: white;
+}
+
+.mybg {
+	background-color: #0b0b16;
+}
+
+
+/*----Navbar-----*/
+
+
+header a span {
+	color: #2e9cca;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+   padding-bottom: .75rem;
+ /*  font-size: 1rem; */ 
+  background: rgba(0, 0, 0, .25); 
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);   
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+ .navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+} 
+
+.form-control-dark {
+  color: #fff;
+  background-color: #0b0b16;
+  border-color: transparent;
+  transition: all .4s;
+}
+
+.search-input {	
+	border-radius: none;	
+}
+
+.search-input:focus {
+	background: white;
+	box-shadow: none;
+	border-bottom: 5px solid #0b0b16;
+	color: black;
+}
+
+
+/*-------Sidebar-------*/
+
+.sidebar {
+  position: fixed;
+  top: 47px;  
+  bottom: 0;  
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 8.7rem;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0px;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+#sidebarMenu div ul li:hover {
+background: #6a6ab5;
+border-radius: 0.25rem;
+
+}
+
+/*-----end of sidebar-----*/
+
+/*----Card----*/
+.card-common {
+  box-shadow: 1px 2px 5px #0b0b16;
+  transition: all .4s;
+}
+
+.card-common:hover{
+  box-shadow: 2px 3px 15px #0b0b16;
+  transform: translateY(-1px);
+}
+/*----end of card----*/
+
+/*----button----*/
+/* .mybtn01 {
+  border-color: rgba(33, 37, 41) !important;
+}
+
+.mybtn01:hover{
+  background-color: #191932;
+  border-color: #191932;
+} */
+
+/*----end of button----*/
+
+/*---pagination---*/
+.page-link{
+  background-color:#0b0b16 ;
+  border:1px solid #0b0b16 ;
+}
+.page-link:hover{
+  color: black !important;
+}
+/*---end of pagination---*/
+
+/*----Media Queries------*/
+
+@media (max-width: 768px) {
+	.myff {
+		flex: 1 1 auto !important;
+	}
+
+	.mydd {
+		display: block;
+		width: 100%;
+	}
+  
+}

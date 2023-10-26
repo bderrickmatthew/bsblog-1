@@ -1,0 +1,167 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="badkmw">
+    
+    <title>Manage Users</title>
+    <!---Bootstrap CSS--->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!---Fontawesome CSS--->
+    <link rel="stylesheet" type="text/css" href="../fontawesome/all.css">
+    <!---Custom CSS--->
+    <link rel="stylesheet" type="text/css" href="admin.css">
+  </head>
+  <body>
+    <header>
+      <nav class = "navbar navbar-dark navbar-expand-lg m-0 p-0 sticky-top flex-md-row flex-md-nowrap shadow align-items-stretch" aria-label = "navbarAdmin">
+        
+        <a class = "navbar-brand h1 fw-bold col-md-3 col-lg-2 me-0 px-3 mb-0 myff" href = "../index.html" target="_blank">
+          PhosHouse<span class = "logo-color">Tech</span>
+        </a>
+        <button class = "navbar-toggler"
+        type = "button"
+        data-bs-toggle = "collapse"
+        data-bs-target = "#sidebarMenu"
+        aria-controls = "sidebarMenu"
+        aria-expanded = "false"
+        aria-label = "Toggle navigation">
+        <span class = "navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 search-input" type="text" placeholder="Search" aria-label="Search">
+        
+        <ul class = "navbar-nav ms-auto justify-content-center mydd">
+          <li class = "nav-item dropdown ">
+            <a class = "nav-link dropdown-toggle m-1"
+              href = "#"
+              id = "dropdown01"
+              data-bs-toggle = "dropdown"
+              aria-expanded = "false"
+              data-bs-display = "static">
+              <i class = "fa-solid fa-user"></i>
+              Admin
+            </a>
+            <ul class = "dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby = "dropdown01">
+              <li><a class = "dropdown-item text-light" href = "#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar-sticky collapse mybg">
+          <div class="position-sticky pt-3">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item mb-2">
+                <a href="admin.html" class="nav-link text-light" aria-current="page">
+                  <span data-feather="home"></span>
+                  <i class="fa fa-home fa-fw me-2 bi"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="manageposts.html" class="nav-link text-light " aria-current="page">
+                  <span data-feather="file"></span>
+                  <i class="fa fa-file-alt fa-fw me-2 bi"></i>
+                  Manage Posts
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="managetopics.html" class="nav-link text-light" aria-current="page">
+                  <span data-feather="file"></span>
+                  <i class="fa fa-list-alt fa-fw me-2 bi"></i>
+                  Manage Topics
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="manageusers.html" class="nav-link active text-light" aria-current="page">
+                  <span data-feather="users"></span>
+                  <i class="fa fa-users fa-fw me-2 bi"></i>
+                  Manage Users
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!---Content--->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!---Table--->
+          <h2 class="text-center mt-3 mb-3">Manage Users</h2>
+          <div class="table-responsive">
+            <table class="table table-dark table-hover table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Username</th>
+                  <th scope="col" >Role</th>
+                  <th scope="col" colspan="2" class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <th>badkmw</th>
+                  <th>Administrator</th>
+                  <th><a href="" class="text-success">edit</a></th>
+                  <th><a href="" class="text-danger">delete</a></th>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <th>matvonder</th>
+                  <th>Author</th>
+                  <th><a href="" class="text-success">edit</a></th>
+                  <th><a href="" class="text-danger">delete</a></th>
+                </tr>
+              </tbody>
+            </table>
+            <!---end of table--->
+            <!---pagination--->
+            <nav>
+              <ul class="pagination justify-content-center ">
+                <li class="page-item ">
+                  <a href="#" class="page-link py-1 px-2 text-light">
+                    <span>Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active ">
+                  <a href="#" class="page-link py-1 px-2 text-light">
+                    1
+                  </a>
+                </li>
+                <li class="page-item ">
+                  <a href="#" class="page-link py-1 px-2 text-light">
+                    2
+                  </a>
+                </li>
+                <li class="page-item ">
+                  <a href="#" class="page-link py-1 px-2 text-light">
+                    3
+                  </a>
+                </li>
+                <li class="page-item ">
+                  <a href="#" class="page-link py-1 px-2 text-light">
+                    <span>Previous</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!---end of pagination--->
+            <a href="users/addusers.html" role="button" aria-pressed="true" class="btn btn-danger btn-lg">
+              Add User
+            </a>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    
+    <!---Bootstrap js bundle--->
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+    <!---Fontawesome js--->
+    <script type="text/javascript" src="../fontawesome/all.js"></script>
+  </body>
+</html>
